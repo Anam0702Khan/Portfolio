@@ -11,3 +11,146 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* You can add global styles to this file, and also import other style files */
+html{
+  scroll-behavior: smooth;
+}
+p{
+  font-size: 20px !important;
+  font-weight: 400;
+  line-height: 1.4 !important;
+  color: #878e99;
+}
+.section{
+  border-radius: 10px;
+  margin-bottom: 50px;
+  padding: 35px 40px 40px;
+  position: relative;
+  z-index: 1;
+}
+.section::after{
+  position: absolute;
+  content: '';
+  inset: 0;
+  z-index: -1;
+  filter: blur(1px);
+  border-radius: 10px;
+  background: linear-gradient(145deg,#1e2024,#23272b);
+  box-shadow: 10px 10px 19px #1c1e22,-10px -10px 19px #262a2e;
+}
+
+.title{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  color: #fff;
+  position: relative;
+}
+.title::after{
+  position: absolute;
+  content: '';
+  inset: auto 0 -16px 0;
+  height: 1px;
+  background-color: #121415;
+}
+
+.bttn{
+  border: none;
+  outline: none;
+  display: inline-block;
+  border-radius: 6px;
+  padding: 12px 35px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  color: #ff014f;
+  z-index: 2;
+  background: linear-gradient(145deg,#1e2024,#23272b);
+  box-shadow: 10px 10px 19px #1c1e22,-10px -10px 19px #262a2e;
+  transition: 0.5s;
+}
+.bttn::before{
+  position: absolute;
+  content: '';
+  inset: 0;
+  border-radius: 6px;
+  background: linear-gradient(to right bottom,#212428,#16181c);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.5;
+}
+.bttn:hover{
+  color: #ff014f;
+  transform: translateY(-5px);
+}
+.bttn:hover::before{
+  opacity: 1;
+}
+.icon-bttn{
+  border-radius: 50% !important;
+  padding: 8px 15px !important;
+}
+.icon-bttn::before{
+  border-radius: 50% !important;
+}
+.modal-header{
+  border-bottom: none !important;
+  padding: 1rem 1rem  0 !important;
+  margin-bottom: -1.5rem;
+}
+.card-list{
+  margin: 0;
+  padding: 0;
+}
+.card-list li{
+  position: relative;
+  line-height: 30px;
+  margin: 0 0 0 20px;
+  list-style: none;
+}
+.card-list li::before{
+  position: absolute;
+  content: '';
+  height: 8px;
+  width: 8px;
+  top: 50%;
+  left: -20px;
+  background-color: #878e99;
+  border-radius: 50%;
+}
+.list-btn{
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #878e99;
+  background: transparent;
+  transition: 0.4s;
+}
+.list-btn .bi{
+  opacity: 0;
+  display: inline-block;
+  font-size: 2rem;
+  transform: translate(-10px,5px);
+  transition: transform 0.4s;
+}
+
+.list-btn:hover{
+  color: #ff014f;
+}
+.list-btn:hover .bi{
+  opacity: 1;
+  transform: translate(0,5px);
+}
+.content{
+  padding-left: 2em;
+}
+.content h3{
+  color: #c4cfde;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}

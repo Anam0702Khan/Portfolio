@@ -1,0 +1,26 @@
+.liststyle{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  
+  }
+  .liststyle li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 81px;
+    height: 81px;
+    margin: 15px 20px;
+    border-radius: 6px;
+    background: linear-gradient(145deg,#1e2024,#23272b);
+    box-shadow: 10px 10px 19px #1c1e22,-10px -10px 19px #262a2e;
+  }
+  .liststyle li:hover{
+    transform: scale(1.05);
+  }
+  .liststyle li img{
+    width: 50px;
+    height: 50px;
+  }
