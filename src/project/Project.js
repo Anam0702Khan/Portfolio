@@ -3,9 +3,32 @@ import React, { useState } from 'react'
 function Project() {
     const [selected, setSelected] = useState(0)
     const projects = [
-        
         {
             id: 0,
+            title :  'Restaurant',
+            content: [
+                'It is fully responsive and works on any device.',
+                'Users can register and log in to their accounts.',
+                'They can browse menu items categorized for easy navigation.',
+                'Users can add menu items to their cart for ordering.',
+                'They can enter their address and place an order.',
+                'The admin can add or delete menu items as needed.',
+                'The admin can mark orders as delivered.',
+                'TECH STACK :  Spring Boot MVC, Java , Mongo DB'
+            ],
+            images: [
+                'Screenshot (67).png',
+                'Screenshot (69).png',
+                'Screenshot (70).png',
+                'Screenshot (71).png',
+                'Screenshot (72).png',
+            ],
+            link: 'https://restaurant-f9te.onrender.com/',
+            githublink: 'https://github.com/Anam0702Khan/restaurant'
+           },
+        
+        {
+            id: 2,
             title: 'Jio Cinema Clone Project ',
             content: [
                 'Extensive Content Library: It provides a vast library of movies, TV shows, documentaries, and original content across various genres.',
@@ -23,11 +46,11 @@ function Project() {
             'Screenshot (65).png',
             'Screenshot (66).png'
            ],
-        link: 'https://anam0702khan.github.io/jio-clone/',
+        link: 'https://jio-ott-clone.netlify.app/',
         githublink: 'https://github.com/Anam0702Khan/Jio-Cinema-Clone---React-Project-1---0yzhq3r0pnt5'
        },
        {
-        id: 1,
+        id: 3,
         title: 'LinkedIn Clone  Project',
 
         content: [
@@ -44,28 +67,28 @@ function Project() {
             'Screenshot (54).png',
             'Screenshot (55).png'
         ],
-        link: 'https://anam0702khan.github.io/LinkedIn-Clone---React-Project-2---nae1y51qfcg9/',
+        link: 'https://anam-linked.netlify.app/',
         githublink: 'https://github.com/Anam0702Khan/LinkedIn-Clone-React'
        },
-       {
-        id: 2,
-        title :  'Movie Hall Project',
-        content: [
-            'It isfully-responsive work on any device.',
-            'It maintains the record of the  booked seat number .',
-            'It shows the user which seats are available to book and which are already occupied.',
-            'TECH STACK : HTML, CSS, JavaScript, Bootstrap'
-        ],
-        images: [
-            'Screenshot (67).png',
-            'Screenshot (69).png',
-            'Screenshot (70).png',
-            'Screenshot (71).png',
-            'Screenshot (72).png',
-        ],
-        link: 'https://anam0702khan.github.io/Movie-Booking-JS---JS-Major-Project-Movie-Booking---Post-Class---uxur4gigjwnw/',
-        githublink: 'https://github.com/Anam0702Khan/Movie-Booking-JS---JS-Major-Project-Movie-Booking---Post-Class---uxur4gigjwnw'
-       },
+    //    {
+    //     id: 2,
+    //     title :  'Movie Hall Project',
+    //     content: [
+    //         'It isfully-responsive work on any device.',
+    //         'It maintains the record of the  booked seat number .',
+    //         'It shows the user which seats are available to book and which are already occupied.',
+    //         'TECH STACK : HTML, CSS, JavaScript, Bootstrap'
+    //     ],
+    //     images: [
+    //         'Screenshot (67).png',
+    //         'Screenshot (69).png',
+    //         'Screenshot (70).png',
+    //         'Screenshot (71).png',
+    //         'Screenshot (72).png',
+    //     ],
+    //     link: 'https://anam0702khan.github.io/Movie-Booking-JS---JS-Major-Project-Movie-Booking---Post-Class---uxur4gigjwnw/',
+    //     githublink: 'https://github.com/Anam0702Khan/Movie-Booking-JS---JS-Major-Project-Movie-Booking---Post-Class---uxur4gigjwnw'
+    //    },
     ]
 function handleProject(id) {
     setSelected(id)

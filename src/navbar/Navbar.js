@@ -4,7 +4,8 @@ import About from "../about/About.js"
 import Contact from '../contact/Contact.js'
 import Skill from '../skill/Skill.js'
 import Project from "../project/Project.js"
-
+import Work from "../work/Work.js"
+import profile from '../assets/profile pic.jpeg';
 
 function Navbar() {
   return (
@@ -18,6 +19,9 @@ function Navbar() {
         <li class="nav-item">
           <a class="nav-link" href='#skill'> Skills</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href='#work'>Work</a>
+        </li>
         
         <li class="nav-item">
           <a class="nav-link" href='#project'>Projects</a>
@@ -30,14 +34,15 @@ function Navbar() {
     <div class="row pt--50">
       <div class="col-lg-6 px-5">
         <div class="sticky-section">
-          <img src="profile pic.jpeg" class="rounded-circle banner-img" />
+          <img src={profile} class="rounded-circle banner-img" />
           <h1 class="heading">
             Hi, I'm
             <span class="name">  Anam Khan</span>
             <br />
             <span class="desc">Full Stack Developer</span>
           </h1>
-          <p>Passionate MERN Stack Developer | Building Web Applications with Innovation, currently pursuing a comprehensive course from Newton School.  </p>
+          <p>Worked as a Full Stack Developer offering 1+ year experience building production web application ,ideally in startup environment</p>
+          {/* <p>Passionate Full Stack Developer | Building Web Applications with Innovation, currently pursuing a comprehensive course from Newton School.  </p> */}
           <a class="bttn" href="https://drive.google.com/file/d/129o7pUtGItvKhG_n5CPIu-qu0ZoFhSZJ/view?usp=drive_link" target="_blank">Download My CV</a>
           <button class="bttn">Hire Me</button>
           <div class="social d-flex flex-row ms-5">
@@ -50,8 +55,9 @@ function Navbar() {
       <div class="col-lg-6 py-3">
         <div class="scroll-section">
           <About />
-          <Project />
           <Skill />
+          <Work />
+          <Project />
           <Contact />
 
         </div>
